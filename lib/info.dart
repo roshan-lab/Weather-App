@@ -50,10 +50,7 @@ class _InfoPageState extends State<InfoPage> {
                     color: Colors.white,
                   ),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const SecondPage(),
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SecondPage(),
                 ),
               );
             },

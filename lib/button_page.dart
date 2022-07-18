@@ -32,16 +32,16 @@ class _ButtonCallState extends State<ButtonCall> {
           ),
           centerTitle: true,
         ),
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.transparent,
-          elevation: 0,
-          child: FloatingActionButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: Icon(Icons.arrow_back_outlined),
-          ),
-        ),
+        // bottomNavigationBar: BottomAppBar(
+        //   color: Colors.transparent,
+        //   elevation: 0,
+        //   child: FloatingActionButton(
+        //     onPressed: () {
+        //       Navigator.pop(context);
+        //     },
+        //     child: Icon(Icons.arrow_back_outlined),
+        //   ),
+        // ),
         body: SafeArea(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
