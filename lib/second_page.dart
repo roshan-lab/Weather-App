@@ -247,29 +247,9 @@ class WeatherPage2 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Row(
-                  //   children: [
-                  //     SvgPicture.asset(
-                  //       "assets/moon.svg",
-                  //       width: 30,
-                  //       height: 30,
-                  //       color: Colors.white,
-                  //     ),
-                  //     SizedBox(width: 15,),
-                  //     Text(
-                  //       "Night",
-                  //       style: TextStyle(
-                  //         color: Colors.white,
-                  //         fontSize: 30,
-                  //         fontWeight: FontWeight.w300,
-                  //       ),
-                  //     )
-                  //
-                  //   ],
-                  // ),
                 ],
               ),
-              SizedBox(height: MediaQuery.of(context).size.height*.2,),
+              SizedBox(height: MediaQuery.of(context).size.height*.1,),
               Column(
                 //////// Border
                 children: [

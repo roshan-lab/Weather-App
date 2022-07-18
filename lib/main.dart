@@ -1,19 +1,16 @@
 import 'dart:convert';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:mausam/info.dart';
 import 'package:mausam/theme.dart';
 import 'package:http/http.dart' as http;
 
 import 'button_page.dart';
-
-// String decimal(int num){
-//   var n=num.toString().split('.')[0];
-//   var d2=num.toString().split('.')[1].substring(0,2);
-//   return (n+"."+d2);
-// }
-
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   ErrorWidget.builder=(FlutterErrorDetails details){
     return const Material();
   };
@@ -78,21 +75,17 @@ class _HomeState extends State<Home> {
         child: Container(
           child: Column(
             children:<Widget> [
-              SizedBox(
-                height: 30,
-              ),
+             SizedBox(height: MediaQuery.of(context).size.height*.1,),
               Container(
                 child: Center(
                   child: Image.asset("assets/gif_cloud.gif",
-                  height: 400,
-                    width: 500,
+                  height: 300,
+                    width: 400,
                     opacity: const AlwaysStoppedAnimation<double>(1),
                   ),
                 ),
               ),
-                SizedBox(
-                  height: 60,
-                ),
+              SizedBox(height: MediaQuery.of(context).size.height*.04,),
                 Container(
                   child: Text("Let's Know The Weather",
                   style: TextStyle(
@@ -101,9 +94,7 @@ class _HomeState extends State<Home> {
                   ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+              SizedBox(height: MediaQuery.of(context).size.height*.05,),
              Row(
                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                mainAxisSize: MainAxisSize.min,
@@ -132,7 +123,6 @@ class _HomeState extends State<Home> {
                            Icon(Icons.list,
                            size: 24,
                            ),
-
                          ],
                        ),
                      ),
@@ -255,30 +245,9 @@ class SingleWeather extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // Row(
-                    //   children: [
-                    //     SvgPicture.asset(
-                    //       "assets/moon.svg",
-                    //       width: 30,
-                    //       height: 30,
-                    //       color: Colors.white,
-                    //     ),
-                    //     SizedBox(width: 15,),
-                    //     Text(
-                    //       "Night",
-                    //       style: TextStyle(
-                    //         color: Colors.white,
-                    //         fontSize: 30,
-                    //         fontWeight: FontWeight.w300,
-                    //       ),
-                    //     )
-                    //
-                    //   ],
-                    // ),
-
                   ],
                 ),
-                SizedBox(height: 80,),
+                SizedBox(height: MediaQuery.of(context).size.height*.1,),
 
                 Column(                            //////// Border
                   children: [
