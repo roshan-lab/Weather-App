@@ -57,8 +57,9 @@ class _ButtonCallState extends State<ButtonCall> {
                           SizedBox(
                             height: 100,
                           ),
-                          ElevatedButton(
-                            onPressed: () {
+                          ElevatedButton.icon(
+                            icon: Icon(Icons.circle),
+                              onPressed: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -66,7 +67,7 @@ class _ButtonCallState extends State<ButtonCall> {
                                 ),
                               );
                             },
-                            child: Container(
+                            label: Container(
                               width: 200,
                               height: 50,
                               child: Row(
@@ -91,7 +92,8 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          icon: Icon(Icons.circle),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -100,7 +102,7 @@ class _ButtonCallState extends State<ButtonCall> {
                               ),
                             );
                           },
-                          child: Container(
+                          label: Container(
                             width: 200,
                             height: 50,
                             child: Row(
@@ -124,7 +126,8 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          icon: Icon(Icons.circle),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -133,7 +136,7 @@ class _ButtonCallState extends State<ButtonCall> {
                               ),
                             );
                           },
-                          child: Container(
+                          label: Container(
                             width: 200,
                             height: 50,
                             child: Row(
@@ -157,7 +160,8 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          icon: Icon(Icons.circle),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -166,7 +170,7 @@ class _ButtonCallState extends State<ButtonCall> {
                               ),
                             );
                           },
-                          child: Container(
+                          label: Container(
                             width: 200,
                             height: 50,
                             child: Row(
@@ -190,7 +194,8 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          icon: Icon(Icons.circle),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -199,7 +204,7 @@ class _ButtonCallState extends State<ButtonCall> {
                               ),
                             );
                           },
-                          child: Container(
+                          label: Container(
                             width: 200,
                             height: 50,
                             child: Row(
@@ -223,7 +228,8 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        ElevatedButton.icon(
+                          icon: Icon(Icons.circle),
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -232,7 +238,7 @@ class _ButtonCallState extends State<ButtonCall> {
                               ),
                             );
                           },
-                          child: Container(
+                          label: Container(
                             width: 200,
                             height: 50,
                             child: Row(
@@ -256,7 +262,7 @@ class _ButtonCallState extends State<ButtonCall> {
                         SizedBox(
                           height: 100,
                         ),
-                        ElevatedButton(
+                        FloatingActionButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -267,22 +273,15 @@ class _ButtonCallState extends State<ButtonCall> {
                           },
                           child: Container(
                             width: 100,
-                            height: 30,
-                            color: Colors.yellowAccent.shade700,
+                            height: 40,
+                           // color: Colors.yellowAccent.shade700,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
-                                  Icons.arrow_back_outlined,
-                                  color: Colors.blue,
-                                  size: 20,
-                                ),
-                                Text(
-                                  "Back",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.blue),
+                                  Icons.home,
+                                  //color: Colors.transparent,
+                                  size: 40,
                                 ),
                               ],
                             ),

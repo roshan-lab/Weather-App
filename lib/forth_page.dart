@@ -198,7 +198,7 @@ class WeatherPage4 extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 200,),
+                  SizedBox(height: MediaQuery.of(context).size.height*.2,),
                   Center(
                     child: Container(
                       child: Text(
@@ -224,7 +224,7 @@ class WeatherPage4 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 200,),
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -262,8 +262,7 @@ class WeatherPage4 extends StatelessWidget {
 
                 ],
               ),
-              SizedBox(height: 80,),
-
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
               Column(                            //////// Border
                 children: [
                   Container(

@@ -13,14 +13,18 @@ import 'button_page.dart';
 //   return (n+"."+d2);
 // }
 
-void main() =>runApp(
-  MaterialApp(
-    debugShowCheckedModeBanner: false,
-    theme: myTheme,
-  home: Home(),
+void main() {
+  ErrorWidget.builder=(FlutterErrorDetails details){
+    return const Material();
+  };
+    runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: myTheme,
+      home: Home(),
 
-),
-);
+    ),
+  );
+}
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -75,7 +79,7 @@ class _HomeState extends State<Home> {
           child: Column(
             children:<Widget> [
               SizedBox(
-                height: 50,
+                height: 30,
               ),
               Container(
                 child: Center(
@@ -187,6 +191,7 @@ class _HomeState extends State<Home> {
 
 
 
+
 class SingleWeather extends StatelessWidget {
   const SingleWeather({Key? key}) : super(key: key);
 
@@ -195,11 +200,11 @@ class SingleWeather extends StatelessWidget {
     return Container(
         padding: EdgeInsets.all(15),
 
-        child: Column(
+       child: Column(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           // crossAxisAlignment: CrossAxisAlignment.start,
           //crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+         children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -209,7 +214,7 @@ class SingleWeather extends StatelessWidget {
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: 200,),
+                    SizedBox(height: MediaQuery.of(context).size.height*.2,),
                     Center(
                       child: Container(
                         child: Text(
@@ -235,7 +240,7 @@ class SingleWeather extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 200,),
+                SizedBox(height: MediaQuery.of(context).size.height*.2,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -54,6 +54,7 @@ class _SecondPageState extends State<SecondPage> {
             size: 30,
           ),
           onPressed: () {
+            Navigator.pop(context);
             // add press
           },
         ),
@@ -194,9 +195,7 @@ class WeatherPage2 extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: 200,
-                  ),
+      SizedBox(height: MediaQuery.of(context).size.height*.2,),
                   Center(
                     child: Container(
                       child: Text(
@@ -225,9 +224,7 @@ class WeatherPage2 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 200,
-              ),
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -272,9 +269,7 @@ class WeatherPage2 extends StatelessWidget {
                   // ),
                 ],
               ),
-              SizedBox(
-                height: 80,
-              ),
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
               Column(
                 //////// Border
                 children: [

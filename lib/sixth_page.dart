@@ -201,7 +201,7 @@ class WeatherPage6 extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 200,),
+                  SizedBox(height: MediaQuery.of(context).size.height*.2,),
                   Center(
                     child: Container(
                       child: Text(
@@ -227,7 +227,7 @@ class WeatherPage6 extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 200,),
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -242,30 +242,9 @@ class WeatherPage6 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Row(
-                  //   children: [
-                  //     SvgPicture.asset(
-                  //       "assets/moon.svg",
-                  //       width: 30,
-                  //       height: 30,
-                  //       color: Colors.white,
-                  //     ),
-                  //     SizedBox(width: 15,),
-                  //     Text(
-                  //       "Night",
-                  //       style: TextStyle(
-                  //         color: Colors.white,
-                  //         fontSize: 30,
-                  //         fontWeight: FontWeight.w300,
-                  //       ),
-                  //     )
-                  //
-                  //   ],
-                  // ),
-
                 ],
               ),
-              SizedBox(height: 80,),
+              SizedBox(height: MediaQuery.of(context).size.height*.2,),
 
               Column(                            //////// Border
                 children: [
